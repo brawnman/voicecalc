@@ -2,7 +2,7 @@
 set -e
 
 # 签名密钥密码：优先读环境变量 KEYPASS，未设置时用默认值（仅本地开发用）
-KEYPASS="${KEYPASS:-123456}"
+KEYPASS="${KEYPASS:-lUqAJru6urq3iBLGWiTfUHsv}"
 
 SRC="/d/Program Files/AndroidBuild/sdk"
 JDK="/d/Program Files/AndroidBuild/jdk-17"
