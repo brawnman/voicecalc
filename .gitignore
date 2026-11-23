@@ -1,0 +1,29 @@
+# 签名密钥（切勿提交：泄露后他人可用同名签名）
+calc.jks
+*.jks
+*.keystore
+
+# 构建产物
+build/
+
+# 编译中间文件
+*.class
+*.dex
+*.flata
+*.apk
+*.apk.idsig
+*.jar
+
+# 日志
+*.log
+
+# 图标备份与工具二进制
+icon_backup/
+tools/lib/
+
+# 系统与 IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml

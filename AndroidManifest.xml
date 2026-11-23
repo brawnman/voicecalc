@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.voicecalc.app"
+    android:versionCode="2"
+    android:versionName="2.0">
+
+    <!-- 不申请任何权限：无网络、无存储、无后台。语音为内置 ogg，完全离线。 -->
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
+
+    <application
+        android:label="计算器"
+        android:icon="@drawable/ic_launcher"
+        android:allowBackup="false"
+        android:theme="@style/CalcTheme"
+        android:supportsRtl="false">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="计算器"
+            android:configChanges="uiMode|orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false"
+            android:label="历史记录"
+            android:configChanges="uiMode|orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity
+            android:name=".ConvertActivity"
+            android:exported="false"
+            android:label="单位转换"
+            android:configChanges="uiMode|orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+    </application>
+</manifest>
